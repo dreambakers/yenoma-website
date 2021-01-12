@@ -1,0 +1,27 @@
+
+
+/*===================================================================================*/
+/*	CUSTOM CSS STYLES
+/*===================================================================================*/
+
+/* Insert your own styles in here! */
+
+
+.get-started-btn {
+    border-radius: 4px !important;
+    color: var(--white) !important;
+    background-color: var(--primary) !important;
+}
+
+.get-started-btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    .get-started-btn {
+        display: none !important;
+    }
+    .get-started-btn-expanded {
+        display: block !important;
+    }
+}

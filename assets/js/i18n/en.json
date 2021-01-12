@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+      "authors": [
+        "Ilya"
+      ],
+      "last-updated": "2016-10-25",
+      "locale": "en"
+    },
+    "app-title": "Example Application",
+    "yenoma": "Yenoma",
+    "msg-get-started": "Get started now and make your questionnaire for Free",
+    "lbl-get-started": "Get Started"
+}
