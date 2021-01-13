@@ -17,6 +17,28 @@
     opacity: 0.8;
 }
 
+.language-picker .inner{
+    padding: 0 !important;
+}
+
+.language-picker .bootstrap-select {
+    width: 120px !important;
+}
+
+.language-picker .form-control {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.language-picker .form-control:focus {
+    box-shadow: none !important;
+    color: inherit;
+}
+
+.language-picker .bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+}
+
 @media (max-width: 1024px) {
     .get-started-btn {
         display: none !important;

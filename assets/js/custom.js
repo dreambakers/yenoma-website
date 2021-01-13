@@ -1,3 +1,10 @@
+$(function(){
+  $('.selectpicker').selectpicker({
+    style: '',
+    styleBase: 'form-control'
+  });
+});
+
 $.i18n.debug = true;
 jQuery(function($) {
   $.i18n({
