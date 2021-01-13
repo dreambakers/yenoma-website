@@ -8,7 +8,7 @@ $(function(){
 $.i18n.debug = true;
 jQuery(function($) {
   $.i18n({
-    locale: 'de'
+    locale: 'en'
   }).load( {
     'en': './assets/js/i18n/en.json',
     'de': './assets/js/i18n/de.json'
