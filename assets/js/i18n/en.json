@@ -6,8 +6,15 @@
       "last-updated": "2016-10-25",
       "locale": "en"
     },
-    "app-title": "Example Application",
     "yenoma": "Yenoma",
     "msg-get-started": "Get started now and make your questionnaire for Free",
-    "lbl-get-started": "Get Started"
+    "lbl-get-started": "Get Started",
+    "lbl-overview": "Overview",
+    "lbl-benefits": "Benefits",
+    "lbl-tour": "Tour",
+    "lbl-test-drive": "Test Drive",
+    "lbl-pricing": "Pricing",
+    "lbl-about": "About",
+    "lbl-privacy-policy": "Privacy Policy",
+    "lbl-contact": "Contact"
 }
