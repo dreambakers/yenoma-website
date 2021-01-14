@@ -39,6 +39,12 @@
     outline: none !important;
 }
 
+.nav > li.active > a {
+    color: var(--primary) !important;
+    border-bottom-color: var(--primary) !important;
+    border-bottom-width: 3px !important;
+}
+
 @media (max-width: 1024px) {
     .get-started-btn {
         display: none !important;

@@ -16,5 +16,8 @@
     "lbl-pricing": "Pricing",
     "lbl-about": "About",
     "lbl-privacy-policy": "Privacy Policy",
-    "lbl-contact": "Contact"
+    "lbl-contact": "Contact",
+    "lbl-newsletter": "Newsletter",
+    "msg-newsletter": "Signup for our newsletter.",
+    "msg-footer-copyright": "© 2021 yenoma. All rights reserved."
 }
