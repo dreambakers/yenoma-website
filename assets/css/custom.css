@@ -45,6 +45,10 @@
     border-bottom-width: 3px !important;
 }
 
+.features .not-available {
+    color: #d6d6d6;
+}
+
 @media (max-width: 1024px) {
     .get-started-btn {
         display: none !important;
