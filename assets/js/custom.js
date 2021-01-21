@@ -19,6 +19,7 @@ $(function($) {
   } ).done(function() {
     $('html').i18n();
     $('.selectpicker').on('change', function(e){
+      $('.selectpicker').selectpicker('refresh');
       $.i18n().locale = this.value;
       localStorage.setItem('lang', this.value);
       $('html').i18n();
