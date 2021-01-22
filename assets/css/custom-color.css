@@ -72,7 +72,7 @@ ul.circled li:before,
 .pagination > .active > span:hover,
 .pagination > li > a:hover,
 .pagination > li > a:focus {
-	background-color: #CDCDCD;
+	background-color: #CCCCCC;
 }
 
 .icon-overlay a .icn-more,
