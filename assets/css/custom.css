@@ -7,6 +7,10 @@
 /* Insert your own styles in here! */
 
 
+.text-dark {
+    color: #333333 !important;
+}
+
 .get-started-btn {
     border-radius: 4px !important;
     color: var(--white) !important;

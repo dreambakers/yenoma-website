@@ -58,7 +58,7 @@ iframe {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #283593;
-    color: #73879C;
+    color: #777777;
     font-size: 18px;
 	line-height: 150%;
     -webkit-font-smoothing: antialiased;
@@ -95,7 +95,7 @@ p {
 	margin-bottom: 20px;
 }
 p a {
-	border-bottom: 1px solid #73879C;
+	border-bottom: 1px solid #777777;
 }
 p a:hover {
 	border-color: transparent;
@@ -751,7 +751,7 @@ figure.post-media + * {
 	background: #E8EAF6;
 }
 .dark-bg .sidelines {
-	border-color: #73879C;
+	border-color: #777777;
 }
 .dark-bg .sidelines span {
 	background: #303F9F;
@@ -834,7 +834,7 @@ iframe + iframe {
 .dark-bg,
 .dark-bg p,
 .dark-bg .item-details li:before {
-    color: #A3B1BF;
+    color: #E8EAF6;
 }
 .dark-bg h1,
 .dark-bg h2,
@@ -872,7 +872,7 @@ iframe + iframe {
 	color: #FFF !important;
 }
 .medium-color {
-	color: #A3B1BF !important;
+	color: #E8EAF6 !important;
 }
 .dark-color {
 	color: #1A237E !important;
@@ -963,7 +963,7 @@ footer {
 	line-height: 22px;
 }
 footer.dark-bg {
-    color: #A3B1BF;
+    color: #E8EAF6;
 }
 footer .inner {
 	padding-top: 45px;
@@ -1014,7 +1014,7 @@ footer p {
 }
 .footer-bottom p,
 .footer-bottom a {
-	color: #707E8C;
+	color: #E8EAF6;
 }
 .footer-bottom p {
     padding: 0;
@@ -1072,7 +1072,7 @@ footer p {
 	border-bottom-width: 2px;
 	border-radius: 3px;
     padding: 25px;
-    background: #F5F7FA;
+    background: #E8EAF6;
 }
 .light-bg .bordered {
 	background: #FFF;
@@ -1085,7 +1085,7 @@ footer p {
 }
 .dark-bg .bordered .info p,
 .tint-bg .bordered .info p {
-	color: #73879C;
+	color: #777777;
 }
 .no-top-border {
     border-top: none;
@@ -1210,7 +1210,7 @@ footer p {
 .dark-bg .border-left-sm,
 .dark-bg .border-left-xs,
 .dark-bg .border-left {
-	border-color: #73879C !important;
+	border-color: #777777 !important;
 }
 .tint-bg .border,
 .tint-bg .border-lg,
@@ -1396,7 +1396,7 @@ aside .thumb figure {
 .navbar-header {
     float: none !important;
 	position: relative;
-	background: #F5F7FA;
+	background: #E8EAF6;
 	border-bottom: 1px solid #E6E9ED;
 	z-index: 0;
 }
@@ -1472,7 +1472,7 @@ aside .thumb figure {
     border-color: transparent;
 }
 .nav > li > a:hover {
-    background-color: #F5F7FA;
+    background-color: #E8EAF6;
     border-color: #E6E9ED;
     color: #1ABB9C;
 }
@@ -1480,7 +1480,7 @@ aside .thumb figure {
     padding: 0;
     margin: 0;
     width: 210px;
-    background: #F5F7FA;
+    background: #E8EAF6;
 	border: none;
 	border: 1px solid #E6E9ED;
 	border-bottom-width: 2px;
@@ -1510,7 +1510,7 @@ aside .thumb figure {
 .navbar .dropdown-menu:not(.yamm-dropdown-menu) li a {
 	line-height: 18px;
     padding: 13px 20px;
-    color: #73879C;
+    color: #777777;
     text-transform: uppercase;
     font-weight: 700;
 	white-space: normal;
@@ -1518,13 +1518,13 @@ aside .thumb figure {
 .navbar .dropdown-menu:not(.yamm-dropdown-menu) li a:hover,
 .navbar .dropdown-menu:not(.yamm-dropdown-menu) li a.active {
     filter: none;
-    background-color: #F5F7FA;
+    background-color: #E8EAF6;
     color: #1ABB9C;
 }
 .navbar .nav .open > a,
 .navbar .nav .open > a:hover,
 .navbar .nav .open > a:focus {
-    background-color: #F5F7FA;
+    background-color: #E8EAF6;
     border-color: #E6E9ED;
 }
 .navbar .nav > li > .dropdown-menu:not(.yamm-dropdown-menu):after {
@@ -1557,7 +1557,7 @@ aside .thumb figure {
 }
 .navbar-header .info li a {
     font-size: 12px;
-    color: #73879C;
+    color: #777777;
 }
 .navbar-header .info a:hover {
     color: #1ABB9C;
@@ -2013,7 +2013,7 @@ p .btn {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    color: #73879C;
+    color: #777777;
     width: 30px;
     height: 30px;
     font-size: 12px;
@@ -2084,7 +2084,7 @@ p .btn {
 }
 .tabs-side .tab a {
     display: block;
-	background: #F5F7FA;
+	background: #E8EAF6;
     color: #1A237E;
 	font-size: 14px;
 	line-height: 130%;
@@ -2170,7 +2170,7 @@ p .btn {
 .tabs-top .tab a {
     display: inline-block;
 	vertical-align: bottom;
-	background: #F5F7FA;
+	background: #E8EAF6;
     color: #1A237E;
 	font-size: 14px;
 	line-height: 130%;
@@ -2265,7 +2265,7 @@ p .btn {
 }
 .tabs-circle-top .tab a:hover {
 	/*border: 4px solid #1ABB9C;*/
-	background-color: #F5F7FA;
+	background-color: #E8EAF6;
 	border-color: #CED7E0 !important;
 }
 .tabs-circle-top .tab.active {
@@ -2465,7 +2465,7 @@ blockquote:before {
 	margin-top: 20px;
 }
 .panel-group .panel {
-    background: #F5F7FA;
+    background: #E8EAF6;
     border: 1px solid #E6E9ED;
 	border-bottom-width: 2px;
     border-radius: 3px;
@@ -2500,7 +2500,7 @@ blockquote:before {
     padding: 15px 25px 15px;
 }
 .panel-title > a.collapsed {
-	background: #F5F7FA;
+	background: #E8EAF6;
 	color: #1A237E;
 }
 .panel-title > a,
@@ -2576,7 +2576,7 @@ blockquote:before {
 }
 .light-bg .panel-title > a.collapsed,
 .light-bg .blank .panel-title > a.collapsed {
-	background: #F8FAFD;
+	background: #E8EAF6;
 }
 .light-bg .panel-title > a,
 .light-bg .blank .panel-title > a,
@@ -2632,7 +2632,7 @@ blockquote:before {
 }
 .blank .panel-title > a,
 .blank .panel-title > a:hover {
-	background: #F5F7FA;
+	background: #E8EAF6;
 }
 .blank .panel-heading,
 .blank .panel-title > a {
@@ -2647,7 +2647,7 @@ blockquote:before {
 .blank.panel-group .bordered,
 .light-bg .panel-group .bordered,
 .dark-bg .panel-group .bordered {
-	background: #F5F7FA;
+	background: #E8EAF6;
 }
 .light-bg .blank.panel-group .bordered {
 	background: #FFF;
@@ -2904,7 +2904,7 @@ blockquote:before {
 	background: #E8EAF6;
 }
 .dark-bg .filter:before {
-	border-color: #73879C;
+	border-color: #777777;
 }
 .dark-bg .filter li {
 	background: #303F9F;
@@ -3398,8 +3398,8 @@ blockquote:before {
 }
 #owl-main .caption h1.medium-bg span,
 #owl-main .caption p.medium-bg span {
-	background: #A3B1BF;
-	box-shadow: -.500em 0 0 #A3B1BF, .500em 0 0 #A3B1BF;
+	background: #E8EAF6;
+	box-shadow: -.500em 0 0 #E8EAF6, .500em 0 0 #E8EAF6;
 	-webkit-box-decoration-break: clone;
 	        box-decoration-break: clone;
 }
@@ -3530,7 +3530,7 @@ blockquote:before {
 	text-transform: uppercase;
 }
 .pricing .plan .features {
-    background: #F5F7FA;
+    background: #E8EAF6;
     padding: 25px 35px;
     border: 1px solid #E6E9ED;
     border-top: none;
@@ -3616,7 +3616,7 @@ input[type="color"],
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 25px;
-    color: #73879C;
+    color: #777777;
     resize: none;
     vertical-align: middle;
     -webkit-box-shadow: none;
@@ -3680,7 +3680,7 @@ textarea.form-control {
 }
 .forms input,
 .forms textarea {
-	background: #F8FAFD;
+	background: #E8EAF6;
 	border-radius: 3px;
 }
 .light-bg .forms input,
@@ -3750,7 +3750,7 @@ footer .newsletter .btn-submit {
 .dark-bg button,
 .dark-bg select,
 .dark-bg textarea {
-    color: #A3B1BF;
+    color: #E8EAF6;
 }
 .form-control::-webkit-input-placeholder {
     color: #C2C7CC;
@@ -4123,7 +4123,7 @@ input:focus:-ms-input-placeholder {
 }
 .post.format-link {
 	background: #303F9F;
-	color: #A3B1BF;
+	color: #E8EAF6;
 }
 .post.format-link .post-title {
 	color: #FFF;
@@ -4220,7 +4220,7 @@ input:focus:-ms-input-placeholder {
     margin: 0;
 }
 .sidenav {
-	background: #F5F7FA;
+	background: #E8EAF6;
     padding: 0;
 	border: 1px solid #E6E9ED;
 	-webkit-border-radius: 3px;
@@ -4484,7 +4484,7 @@ input:focus:-ms-input-placeholder {
     text-align: center;
 }
 .retina-icons-code code {
-    color: #73879C;
+    color: #777777;
     background: none;
 }
 .table-bordered {
@@ -4501,7 +4501,7 @@ input:focus:-ms-input-placeholder {
     border-top: 1px solid #E6E9ED;
 }
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-	background-color: #F5F7FA;
+	background-color: #E8EAF6;
 }
 .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
 	border-color: #E6E9ED;
@@ -4687,7 +4687,7 @@ input:focus:-ms-input-placeholder {
 	opacity: 0;
 }
 .btn-modal {
-	background: #F5F7FA !important;
+	background: #E8EAF6 !important;
 	color: #1A237E !important;
 	border: 1px solid #E6E9ED;
 	border-bottom-width: 2px;
@@ -5176,7 +5176,7 @@ input:focus:-ms-input-placeholder {
 	}
 	.navbar-collapse {
 	    position: static !important;
-		background: #F5F7FA;
+		background: #E8EAF6;
 	    max-height: inherit;
 		padding-top: 0;
 		padding-bottom: 0;
