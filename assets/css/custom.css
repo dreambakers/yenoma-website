@@ -32,6 +32,7 @@
 .language-picker .form-control {
     background-color: transparent !important;
     border: none !important;
+    font-size: unset !important;
 }
 
 .language-picker .form-control:focus {
@@ -41,6 +42,14 @@
 
 .language-picker .bootstrap-select .dropdown-toggle:focus {
     outline: none !important;
+}
+
+.language-picker li:not(.selected) a {
+    color: #777777;
+}
+
+footer a:hover {
+    color: unset !important;
 }
 
 .nav > li.active > a {
