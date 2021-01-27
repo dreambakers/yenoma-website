@@ -1,5 +1,17 @@
 const lang = localStorage.getItem('lang') || 'en';
 
+if (!localStorage.getItem('accept-cookies')) {
+  console.log('here')
+  setTimeout(function(){
+    $('.cookie-consent-banner').removeClass('d-none');
+  }, 1000);
+
+  $('.cookie-consent-banner-ack').on('click', function(){
+    localStorage.setItem('accept-cookies', true);
+    $('.cookie-consent-banner').addClass('d-none');
+  });
+}
+
 $(function(){
   $('.selectpicker').selectpicker({
     style: '',
