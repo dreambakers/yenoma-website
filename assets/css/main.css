@@ -5448,7 +5448,7 @@ input:focus:-ms-input-placeholder {
 	#owl-main .item,
 	#owl-main.height-md .item,
 	#owl-main.height-lg .item {
-		height: 88vh;
+		height: 35vh;
 	}
 	#hero h1 {
 		font-size: 38px;
