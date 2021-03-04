@@ -86,11 +86,39 @@ footer a:hover {
     color: var(--white);
 }
 
+.header-yenoma {
+    color:#aaaaaa;
+    opacity: 0.9;
+    font-size: 12vh !important;
+}
+
+.header-yenoma.lower {
+    font-size: 4vh !important;
+}
+
 @media (max-width: 1024px) {
     .get-started-btn {
         display: none !important;
     }
     .get-started-btn-expanded {
         display: block !important;
+    }
+
+    .header-yenoma {
+        font-size: 8vh !important;
+    }
+
+    .header-yenoma.lower {
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .header-yenoma {
+        font-size: 5vh !important;
+    }
+
+    .header-yenoma.lower {
+        font-size: 2vh !important;
     }
 }
