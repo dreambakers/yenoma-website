@@ -160,7 +160,7 @@
 
 									</form>
 
-									<div id="response"></div>
+									<div id="response" class="mt-3"></div>
 
 								</div><!-- ./col -->
 
@@ -267,5 +267,25 @@
         <script src="assets/js/lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
 		<script src="assets/js/scripts.js"></script>
 		<script src="assets/js/custom.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$('#contactform').on('submit', function (e) {
+					e.preventDefault();
+
+					$.ajax({
+					type: 'post',
+					url: 'contact.php',
+					data: $('#contactform').serialize(),
+					success: function (data) {
+						$('#response').html(data);
+					},
+					error: function (date) {
+						$('#response').html(data);
+					}
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
