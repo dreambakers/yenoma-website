@@ -55,7 +55,7 @@
 		$subject = "Contact Form: $name";
 	}
 	$message = "$message";
-	$headers = "From: ".$name." <".$email.">" . "\r\n" . "Reply-To: " . $email;
+	$headers = "From: ".$name." <".$email.">" . "\r\n" . "Reply-To: " . $email . "\r\n" . "Content-Type: text/html; charset=UTF-8";
 
 	if (mail($to, $subject, $message, $headers)) {
 		die("<p class='success'>Thank you! – Your message has been successfully sent!</p>");
