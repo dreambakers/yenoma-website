@@ -1,7 +1,6 @@
 const lang = localStorage.getItem('lang') || 'en';
 
 if (!localStorage.getItem('accept-cookies')) {
-  console.log('here')
   setTimeout(function(){
     $('.cookie-consent-banner').removeClass('d-none');
   }, 1000);
@@ -23,6 +22,13 @@ $('.selectpicker').val(lang);
 
 $.i18n.debug = true;
 $(function($) {
+  // TODO: load only on select pages(!!)
+  $.getJSON('./assets/js/i18n/legal.json', function(data) {
+    $.i18n({
+      locale: lang
+    }).load(data)
+  });
+
   $.i18n({
     locale: lang
   }).load( {
