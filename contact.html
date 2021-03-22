@@ -322,7 +322,7 @@
 						dataType: 'json',
 						success: function (response) {
 							let responseText = '';
-							if (response.errors.length >= 1) {
+							if (response.errors && response.errors.length >= 1) {
 								for(let error of response.errors) {
 									responseText += `<li>${$.i18n(error)}</li>`;
 								}
