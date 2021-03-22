@@ -270,19 +270,78 @@
 
 		<script>
 			$(document).ready(function(){
+
+				$('#contactform').validate({
+
+					errorPlacement: function(error, element) {
+						$(element).attr({
+							'placeholder' : $.i18n(error.html())
+						});
+					},
+
+					focusInvalid: false,
+
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true,
+							minlength: 10
+						}
+					},
+
+					messages: {
+						name: {
+							required: $.i18n('msg-enter-name'),
+							minlength: $.i18n('msg-name-characters')
+						},
+						email: {
+							required: $.i18n('msg-enter-email'),
+							email: $.i18n('msg-invalid-email')
+						},
+						message: {
+							required: $.i18n('msg-enter-msg'),
+							minlength: $.i18n('msg-chacters-lenght')
+						}
+					}
+				});
+
 				$('#contactform').on('submit', function (e) {
 					e.preventDefault();
 
 					$.ajax({
-					type: 'post',
-					url: 'contact.php',
-					data: $('#contactform').serialize(),
-					success: function (data) {
-						$('#response').html(data);
-					},
-					error: function (date) {
-						$('#response').html(data);
-					}
+						type: 'post',
+						url: 'contact.php',
+						data: $('#contactform').serialize(),
+						dataType: 'json',
+						success: function (response) {
+							let responseText = '';
+							if (response.errors.length >= 1) {
+								for(let error of response.errors) {
+									responseText += `<li>${$.i18n(error)}</li>`;
+								}
+								responseText = `<ul class='errors arrowed'>${responseText}</ul>`;
+							} else {
+								responseText += `<p class='success'>${$.i18n('msg-sent-success')}</p>`;
+							}
+
+							if (response.status || (response.errors[0] === 'error-msg-unsuccessful')) {
+								$('#contactform').delay(1300).slideUp('fast');
+								$('#response').html($.i18n(responseText)).hide().delay(1300).slideDown('fast');
+							} else {
+								$('#response').html(responseText);
+							}
+						},
+						error: function (response) {
+							$('#contactform').delay(1300).slideUp('fast');
+							$('#response').html($.i18n('error-msg-unsuccessful')).hide().delay(1300).slideDown('fast');
+						}
 					});
 				});
 			});

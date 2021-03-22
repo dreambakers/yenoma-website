@@ -195,5 +195,14 @@
   "placeholder-2": "Name (Required) -de",
   "placeholder-3": "Email (Required) -de",
   "placeholder-4": "Subject -de",
-  "placeholder-5": "Enter your message.... -de"
+  "placeholder-5": "Enter your message.... -de",
+  "msg-enter-name": "Please enter your name! -de",
+  "msg-name-characters": "Name requires at least 2 characters! -de",
+  "msg-enter-email": "Please enter your email! -de",
+  "msg-invalid-email": "Please enter a valid email! -de",
+  "msg-enter-msg": "Please enter a message! -de",
+  "msg-chacters-lenght": "Message requires at least 10 characters! -de",
+  "msg-sending": "Sending message ... -de",
+  "msg-sent-success": "Thank you! – Your message has been successfully sent! -de",
+  "error-msg-unsuccessful": "Something went wrong sending your message. Please try again later. -de"
 }

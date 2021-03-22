@@ -20,31 +20,31 @@
 	$errors = array();
 	if(strlen($name) < 2) {
 		if(!$name) {
-			$errors[] = "Please enter your name!";
+			$errors[] = "msg-enter-name";
 		} else {
-			$errors[] = "Name requires at least 2 characters!";
+			$errors[] = "msg-name-characters";
 		}
 	}
 	if(!$email) {
-		$errors[] = "Please enter your email!";
+		$errors[] = "msg-enter-email";
 	} else if(!validEmail($email)) {
-		$errors[] = "Please enter a valid email!";
+		$errors[] = "msg-invalid-email";
 	}
 	if(strlen($message) < 10) {
 		if(!$message) {
-			$errors[] = "Please enter a message!";
+			$errors[] = "msg-enter-msg";
 		} else {
-			$errors[] = "Message requires at least 10 characters!";
+			$errors[] = "msg-chacters-lenght";
 		}
 	}
 
 	// Output error message(s)
 	if($errors) {
-		$errortext = "";
-		foreach($errors as $error) {
-			$errortext .= "<li>".$error."</li>";
-		}
-		die("<ul class='errors arrowed'>". $errortext ."</ul>");
+		$response = (object) [
+			'status' => 0,
+			'errors' => $errors
+		];
+		die(json_encode($response));
 	}
 
 	// Send the email
@@ -55,15 +55,22 @@
 		$subject = "Contact Form: $name";
 	}
 	$message = "$message";
-	$headers = "From: ".$name." <".$email.">" . "\r\n" . "Reply-To: " . $email . "\r\n" . "Content-Type: text/html; charset=UTF-8";
+	$headers = "From: ".$name." <".$email.">" . "\r\n" . "Reply-To: " . $email . "\r\n" . "Content-Type: text/plain; charset=UTF-8";
 
 	if (mail($to, $subject, $message, $headers)) {
-		die("<p class='success'>Thank you! – Your message has been successfully sent!</p>");
-	} else {
-		die("<p class='errors'>Something went wrong sending your message. Please try again later.</p>");
-	}
+		$response = (object) [
+			'status' => 1,
+		];
 
-	// Output success message
+		die(json_encode($response));
+	} else {
+		$errors[] = "error-msg-unsuccessful";
+		$response = (object) [
+			'status' => 0,
+			'errors' => $errors
+		];
+		die(json_encode($response));
+	}
 
 	// Check if email is valid
 	function validEmail($email) {
